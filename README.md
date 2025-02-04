@@ -22,9 +22,18 @@ The API analyzes a number and returns the following in a single JSON response:
 
 1. Clone the repository:
 
+    - using https
+
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/PaulAjii/hng-stage-1.git
+    cd hng-stage-1
+    ```
+
+    - using SSH
+
+    ```bash
+    git clone git@github.com:PaulAjii/hng-stage-1.git
+    cd hng-stage-1
     ```
 
 2. Install dependencies:
