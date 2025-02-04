@@ -6,10 +6,15 @@
 		"start": "node index.js",
 		"dev": "node --watch index.js"
 	},
-	"keywords": [],
+	"keywords": [
+		"node",
+		"express",
+		"mathematics",
+		"fun-fact"
+	],
 	"author": "Paul Ajijola",
-	"license": "ISC",
-	"description": "",
+	"license": "MIT",
+	"description": "an API that takes a number and returns interesting mathematical properties about it, along with a fun fact",
 	"dependencies": {
 		"express": "^4.21.2"
 	}
