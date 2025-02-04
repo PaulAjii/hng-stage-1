@@ -1,9 +1,12 @@
 const express = require('express');
 
+// App Instance
 const app = express();
 
 // Middlewares
 const corsMiddleware = require('./middleware/cors');
+
+// Helper functions
 const isPrimeNumber = require('./utils/isPrime');
 const isPerfectNumber = require('./utils/isPerfect');
 const isEvenNumber = require('./utils/isEven');
