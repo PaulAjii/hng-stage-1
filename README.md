@@ -50,6 +50,8 @@ The API analyzes a number and returns the following in a single JSON response:
 
 4. The server will run on `http://localhost:3000`.
 
+-   The server runs live [here](https://hng-stage-1-q7i5.onrender.com/)
+
 ---
 
 ## API Endpoint
