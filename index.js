@@ -20,8 +20,8 @@ app.get('/api/classify-number', async (req, res) => {
 
 		if (!number || isNaN(+number)) {
 			return res.status(400).json({
-				number: number,
 				error: true,
+				number: number,
 			});
 		}
 
@@ -35,10 +35,10 @@ app.get('/api/classify-number', async (req, res) => {
 			number: +number,
 			is_prime: isPrimeNumber(+number),
 			is_perfect: isPerfectNumber(+number),
-			properties: isArmstrongNum(number)
+			properties: isArmstrongNum(Math.abs(+number).toString())
 				? ['armstrong', isEvenNumber(+number)]
 				: [isEvenNumber(+number)],
-			digit_sum: +digitSumNum(number),
+			digit_sum: +digitSumNum(Math.abs(+number).toString()),
 			fun_fact: await response.text(),
 		});
 	} catch (error) {
