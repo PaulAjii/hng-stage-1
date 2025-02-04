@@ -32,13 +32,13 @@ app.get('/api/classify-number', async (req, res) => {
 		}
 
 		res.status(200).json({
-			number: number,
+			number: +number,
 			is_prime: isPrimeNumber(+number),
 			is_perfect: isPerfectNumber(+number),
 			properties: isArmstrongNum(number)
 				? ['armstrong', isEvenNumber(+number)]
 				: [isEvenNumber(+number)],
-			digit_sum: digitSumNum(number),
+			digit_sum: +digitSumNum(number),
 			fun_fact: await response.text(),
 		});
 	} catch (error) {
